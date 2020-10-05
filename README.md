@@ -22,7 +22,7 @@ sudo unzip ./terraform_0.11.13_linux_amd64.zip -d /bin/
 1. Clone the current repo to your local machine using 
 
 ```
-git clone https://github.com/Anurag-30/MediaWiki.git
+git clone https://github.com/rohitsahuajm/mediawiki.git
 
 ```
 2. Move into Terraform directory
