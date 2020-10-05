@@ -140,8 +140,8 @@ resource "aws_key_pair" "wikimedia" {
 
 resource "aws_instance" "web" {
   count                         = 1
-  ami                           = "ami-07d0cf3af28718ef8"
-  instance_type                 = "t2.large"
+  ami                           = "ami-03657b56516ab7912"
+  instance_type                 = "t2.macro"
   key_name                      = "${aws_key_pair.wikimedia.key_name}"
   vpc_security_group_ids        = ["${aws_security_group.allow_http.id}","${aws_security_group.ssh-sg.id}","${aws_security_group.nodeport.id}"]
   subnet_id                     = "${aws_subnet.public-subnets.id}"
